@@ -1,0 +1,49 @@
+{
+  "basic_info": {
+    "name": "Julian Barker",
+    "titles": "Software Developer | Former Infantry Officer in the US Army | TS-SCI | USMA '16 | Code Fellows",
+    "social": [
+      {
+        "name": "github",
+        "url": "https://github.com/julian-barker",
+        "class": "fab fa-github"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/julian-c-barker/",
+        "class": "fab fa-linkedin"
+      }
+    ],
+    "image": "profilePic.jpg"
+  },
+  "skills": [
+    {
+      "name": "HTML 5",
+      "class": "devicon-html5-plain"
+    },
+    {
+      "name": "CSS 3",
+      "class": "devicon-css3-plain"
+    },
+    {
+      "name": "TypeScript",
+      "class": "devicon-typescript-plain"
+    },
+    {
+      "name": "JavaScript",
+      "class": "devicon-javascript-plain"
+    },
+    {
+      "name": "React",
+      "class": "devicon-react-plain"
+    },
+    {
+      "name": "Sass",
+      "class": "devicon-sass-original"
+    },
+    {
+      "name": "Bootstrap",
+      "class": "devicon-bootstrap-plain"
+    }
+  ]
+}

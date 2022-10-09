@@ -13,15 +13,22 @@
   "dependencies": {
     "@astrojs/preact": "^1.1.1",
     "@astrojs/tailwind": "^2.0.2",
+    "@fontsource/audiowide": "^4.5.9",
+    "@fontsource/fira-code": "^4.5.12",
+    "@fontsource/major-mono-display": "^4.5.11",
+    "@fontsource/special-elite": "^4.5.8",
+    "@types/node": "^18.8.3",
     "astro": "^1.4.4",
     "preact": "^10.11.1",
     "tailwindcss": "^3.1.8"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^5.39.0",
+    "autoprefixer": "^10.4.12",
     "eslint": "^8.24.0",
     "eslint-plugin-astro": "^0.19.0",
     "prettier": "^2.7.1",
-    "prettier-plugin-astro": "^0.5.5"
+    "prettier-plugin-astro": "^0.5.5",
+    "prettier-plugin-tailwindcss": "^0.1.13"
   }
 }
