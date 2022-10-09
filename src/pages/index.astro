@@ -1,17 +1,23 @@
 ---
-import "@fontsource/special-elite";
-import "@fontsource/audiowide";
-import "@fontsource/fira-code";
-import "@fontsource/major-mono-display";
 import Layout from "../layouts/Layout.astro";
+import Header from "@components/Header.astro";
 import Hero from "@components/Hero.astro";
 import Section from "@layouts/Section.astro";
+
+import Data from "../../public/data.json";
+import Project from "@components/Project.astro";
 ---
 
 <Layout title="Julian Barker">
-	<main class='scroll-smooth snap-start snap-proximity'>
+	<Header name="header"></Header>
+	<main class='overflow-scroll scroll-py-16 scroll-smooth snap-y snap-mandatory' >
 		<Hero />
-		<Section heading='Welcome!'>
+		<Section heading='At a Glance...'>
+			<p class="text-center text-xl text-zinc-300 sm:text-2xl">
+				{Data.basic_info.titles}
+			</p>
+		</Section>
+		<!-- <Section heading='Welcome!'>
 			<p class="mb-2 text-center text-xl text-zinc-300 sm:text-2xl">
 				Hi, I'm <span class="text-amber-500">Julian</span>,
 			</p>
@@ -20,56 +26,43 @@ import Section from "@layouts/Section.astro";
 				new skills and tools. I'm looking forward to a lifelong career of
 				growth and contribution to worthy causes!
 			</p>
-		</Section>
+		</Section> -->
 		<Section heading='Skills'>
-
+			<div class="mt-8 flex flex-wrap justify-evenly gap-y-6 sm:gap-x-8">
+				{Data.skills.map(el => {
+					return (
+						<div class='w-28 flex-col justify-center text-center'>
+							<i class={`${el.name} text-5xl text-lime-500`} ></i>
+							<h4 class='text-lime-500 text-md' >{el.title}</h4>
+						</div>
+					);
+				})}
+			</div>
 		</Section>
 		<Section heading='Projects'>
-
+			<ul class="mt-8 flex flex-wrap justify-evenly gap-y-8">
+				{Data.projects.map(el => {
+					return (
+						<Project 
+							title={el.title} 
+							body={el.description}
+							link={el.link} 
+							gh={el.gh}
+							images={el.images}
+							technologies={el.technologies}
+						>
+						</Project>
+					);
+				})}
+			</ul>
 		</Section>
+		
 		<Section heading='Experience'>
 
 		</Section>
-		<Section heading='More About Me'>
-			
+		<Section heading='More About Me' client:load>
+
 		</Section>
-		<!-- SKILLS -->
-		<div class="skills py-4 px-8">
-			<div class='max-w-screen-lg mx-auto'>
-				<h2
-					class="text-2xl font-semibold text-center text-zinc-300 sm:text-3xl"
-				>
-					Skills
-				</h2>
-			</div>
-		</div>
-		<div class="portfolio py-4 px-8">
-			<div class='max-w-screen-lg mx-auto'>
-				<h2
-					class="text-2xl font-semibold text-center text-zinc-300 sm:text-3xl"
-				>
-					Portfolio
-				</h2>
-			</div>
-		</div>
-		<div class="experience py-4 px-8">
-			<div class='max-w-screen-lg mx-auto'>
-				<h2
-					class="text-2xl font-semibold text-center text-zinc-300 sm:text-3xl"
-				>
-					Experience
-				</h2>
-			</div>
-		</div>
-		<div class="about py-4 px-8">
-			<div class='max-w-screen-lg mx-auto'>
-				<h2
-					class="text-2xl font-semibold text-center text-zinc-300 sm:text-3xl"
-				>
-					About
-				</h2>
-			</div>
-		</div>
 	</main>
 </Layout>
 
@@ -77,4 +70,5 @@ import Section from "@layouts/Section.astro";
 	html {
 		font-family: "Fira Code";
 	}
+
 </style>

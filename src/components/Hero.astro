@@ -3,7 +3,7 @@ import "@fontsource/audiowide";
 ---
 
 <div
-			class="hero relative max-h-screen h-max flex-col content-center sm:grid grid-cols-2 rounded-md place-items-center"
+			class="hero relative max-h-screen h-max backdrop-brightness-50 backdrop-hue-rotate-30 flex-col content-center md:grid grid-cols-5 rounded-md place-items-center overflow-hidden"
 		>
 			<a
 				href="https://github.com/julian-barker"
@@ -17,8 +17,8 @@ import "@fontsource/audiowide";
 					height="70"
 					viewBox="0 0 250 250"
 					style={{
-						fill: "#151513",
-						color: "#fff",
+						fill: "#72bf0c",
+						color: "#040",
 						position: "absolute",
 						top: 0,
 						border: 0,
@@ -41,37 +41,37 @@ import "@fontsource/audiowide";
 				</svg>
 			</a>
 			<img
-				class="w-full max-h-80 object-cover object-center sm:hidden"
+				class="w-full max-h-80 object-cover object-center shadow-xl md:hidden"
 				src="hero.jpeg"
 				alt="placeholder"
 			/>
-			<div class="my-16 flex-col content-center items-center sm:my-4">
+			<div class="my-16 col-span-2 flex-col content-center items-center md:my-4">
 				<h1
-					class="mb-4 text-center text-4xl font-audiowide text-transparent bg-gradient-to-r from-orange-700 via-amber-400 to-orange-500 bg-clip-text sm:mt-0 sm:text-start lg:text-5xl xl:text-6xl"
+					class="mb-4 text-center text-4xl font-audiowide text-transparent bg-gradient-to-r from-orange-700 via-amber-400 to-orange-500 bg-clip-text drop-shadow-xl md:mt-0 md:text-start lg:text-5xl xl:text-6xl"
 				>
 					Julian Barker
 				</h1>
 				<div>
 					<div
-						class="mb-3 -ml-28 text-center text-xl font-audiowide text-orange-500 sm:text-left sm:text-2xl sm:ml-12 lg:text-3xl lg:ml-8 xl:text-4xl xl:ml-16"
+						class="mb-3 -ml-28 text-center text-xl font-audiowide text-orange-500 drop-shadow-lg md:text-left md:text-2xl md:ml-12 lg:text-3xl lg:ml-8 xl:text-4xl xl:ml-16"
 					>
 						Design.
 					</div>
 					<div
-						class="mb-3 ml-24 text-center text-xl font-audiowide text-amber-500 sm:text-left sm:text-2xl sm:ml-24 lg:text-3xl lg:ml-28 xl:text-4xl xl:ml-44"
+						class="mb-3 ml-24 text-center text-xl font-audiowide text-amber-500 drop-shadow-lg md:text-left md:text-2xl md:ml-24 lg:text-3xl lg:ml-28 xl:text-4xl xl:ml-44"
 					>
 						Develop.
 					</div>
 					<div
-						class="mb-3 -ml-12 text-center text-xl font-audiowide text-yellow-500 sm:text-left sm:text-2xl sm:ml-36 lg:text-3xl lg:ml-52 xl:text-4xl xl:ml-72"
+						class="mb-3 -ml-12 text-center text-xl font-audiowide text-yellow-500 drop-shadow-lg md:text-left md:text-2xl md:ml-36 lg:text-3xl lg:ml-52 xl:text-4xl xl:ml-72"
 					>
 						Deploy.
 					</div>
 				</div>
 			</div>
-			<div class="hidden h-full sm:block">
+			<div class="hidden relative col-span-3 -skew-x-12 translate-x-20 md:block overflow-hidden">
 				<img
-					class="object-cover object-center"
+					class="relative -left-20 skew-x-12 object-cover object-center shadow-xl"
 					src="hero.jpeg"
 					alt="placeholder"
 				/>

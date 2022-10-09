@@ -18,32 +18,182 @@
   },
   "skills": [
     {
-      "name": "HTML 5",
-      "class": "devicon-html5-plain"
+      "title": "HTML 5",
+      "name": "devicon-html5-plain"
     },
     {
-      "name": "CSS 3",
-      "class": "devicon-css3-plain"
+      "title": "CSS 3",
+      "name": "devicon-css3-plain"
     },
     {
-      "name": "TypeScript",
-      "class": "devicon-typescript-plain"
+      "title": "Sass",
+      "name": "devicon-sass-original"
     },
     {
-      "name": "JavaScript",
-      "class": "devicon-javascript-plain"
+      "title": "Bootstrap",
+      "name": "devicon-bootstrap-plain"
     },
     {
-      "name": "React",
-      "class": "devicon-react-plain"
+      "title": "Tailwind",
+      "name": "devicon-tailwindcss-plain"
     },
     {
-      "name": "Sass",
-      "class": "devicon-sass-original"
+      "title": "JavaScript",
+      "name": "devicon-javascript-plain"
     },
     {
-      "name": "Bootstrap",
-      "class": "devicon-bootstrap-plain"
+      "title": "TypeScript",
+      "name": "devicon-typescript-plain"
+    },
+    {
+      "title": "React",
+      "name": "devicon-react-plain"
+    },
+    {
+      "title": "NodeJS",
+      "name": "devicon-nodejs-plain"
+    },
+    {
+      "title": "Express",
+      "name": "devicon-express-original"
+    },
+    {
+      "title": "MongoDB",
+      "name": "devicon-mongodb-plain"
+    },
+    {
+      "title": "Git",
+      "name": "devicon-git-plain"
+    },
+    {
+      "title": "GitHub",
+      "name": "devicon-github-original"
+    }
+  ],
+  "projects": [
+    {
+      "title": "City Explorer",
+      "startDate": "2022",
+      "description": "Queries the LocationIQ API and subsequently a Yelp, TMDB, and WeatherBit APIs to present the user with a map and some information about a city.",
+      "images": [
+        "images/explorer/p1.jpg",
+        "https://via.placeholder.com/600x400/ab6ded/e6e6e6.jpg?text=Still+Coming+Soon"
+      ],
+      "link": "https://julian-city-explorer.netlify.app/",
+      "gh": "https://github.com/julian-barker/city-explorer/",
+      "technologies": [
+        {
+          "name": "devicon-react-plain",
+          "title": "React"
+        },
+        {
+          "title": "Bootstrap",
+          "name": "devicon-bootstrap-plain"
+        },
+        {
+          "title": "NodeJS",
+          "name": "devicon-nodejs-plain"
+        },
+        {
+          "name": "devicon-express-original",
+          "title": "Express"
+        }
+      ]
+    },
+    {
+      "title": "Gallery of Horns",
+      "startDate": "2022",
+      "description": "This page is built in React and displays a set of card with images and descriptions of things with horns. Users can \"like\" an image and it will dynamically display heart icons for <10 hearts, or a compact number for >10 hearts. The page has modal functionality, basic fuzzy search, filtering by number of horns, and sorting by likes, number of horns, id, and name.",
+      "images": [
+        "images/horns/p1.jpg",
+        "images/horns/p2.jpg"
+      ],
+      "link": "https://julians-horned-beasts.netlify.app/",
+      "gh": "https://github.com/julian-barker/horned-animals/",
+      "technologies": [
+        {
+          "name": "devicon-react-plain",
+          "title": "React"
+        },
+        {
+          "name": "devicon-javascript-plain",
+          "title": "JavaScript"
+        },
+        {
+          "name": "devicon-bootstrap-plain",
+          "title": "Bootstrap"
+        }
+      ]
+    },
+    {
+      "title": "Gitris",
+      "startDate": "2022",
+      "description": "This page recreates the classic game \"Tetris\", with all the same functionality, a localStorage leaderboard, and a localStorage darkmode preference. It also has \"How-to-Play\", \"Trivia\", and \"About the Team\" pages.",
+      "images": [
+        "images/gitris/p1.jpg",
+        "images/gitris/p2.jpg"
+      ],
+      "link": "https://julian-barker.github.io/game-site/",
+      "gh": "https://github.com/julian-barker/game-site/",
+      "technologies": [
+        {
+          "name": "devicon-html5-plain",
+          "title": "HTML"
+        },
+        {
+          "name": "devicon-css3-plain",
+          "title": "CSS"
+        },
+        {
+          "name": "devicon-javascript-plain",
+          "title": "JavaScript"
+        },
+        {
+          "name": "devicon-github-original",
+          "title": "Github Pages"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "CodeFellows",
+      "title": "Student",
+      "years": "08.2022 - present",
+      "mainTech": [
+        "JavaScript"
+      ],
+      "technologies": [
+        "HTML 5",
+        "CSS 3",
+        "JavaScript",
+        "React",
+        "Bootstrap",
+        "Express",
+        "MongoDB",
+        "Netlify"
+      ]
+    },
+    {
+      "company": "US Army",
+      "title": "Infantry Officer",
+      "years": "06.2016 - 08.2022",
+      "mainTech": [
+        "MS 365"
+      ],
+      "technologies": [
+        "MS Teams",
+        "MS Office"
+      ]
+    },
+    {
+      "company": "United States Military Academy (West Point)",
+      "title": "Student",
+      "years": "06.2012 - 05.2016",
+      "mainTech": [
+        "MATLAB"
+      ],
+      "technologies": []
     }
   ]
 }

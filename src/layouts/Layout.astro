@@ -4,6 +4,11 @@ export interface Props {
 }
 
 const { title } = Astro.props;
+
+import "@fontsource/special-elite";
+import "@fontsource/audiowide";
+import "@fontsource/major-mono-display";
+
 ---
 
 <!DOCTYPE html>
@@ -12,11 +17,15 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<div id="fixed-bg" ></div>
+	<body >
+		<div id="fixed-bg" class="fixed inset-0 -z-10 bg-stone-800 bg-repeat"></div>
 		<header>
 			<slot name="header" />
 		</header>
@@ -28,10 +37,6 @@ const { title } = Astro.props;
 </html>
 
 <style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
 	html {
 		font-family: system-ui, sans-serif;
 		background-color: #F6F6F6;
@@ -41,20 +46,6 @@ const { title } = Astro.props;
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
 	#fixed-bg {
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		z-index: -1;
-		background-color: #1e0e24;
 		background-image: url('topography.svg');
-		background-repeat: repeat;
 	}
-
-	body > main > :nth-child(even) {
-		backdrop-filter: invert(80%) brightness(40%) ;
-	}
-	
-
 </style>

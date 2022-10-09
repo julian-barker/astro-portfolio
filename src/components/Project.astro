@@ -1,0 +1,58 @@
+---
+export interface Props {
+	title: string,
+	body: string,
+	link: string,
+	gh: string,
+	images: string[],
+	technologies: {
+		title: string,
+		name: string
+	}[]
+}
+
+const { title, body, link, gh, images, technologies} = Astro.props;
+---
+
+<li class="link-card -skew-x-1 rounded-md w-full p-4 text-gray-300 bg-stone-500 sm:odd:mr-24 sm:even:ml-24 sm:p-8">
+	<div>
+		<img 
+			class="m-4 skew-x-1 rounded-md shadow-xl sm:w-1/2 sm:float-right" 
+			src={images[0]} 
+			alt="placeholder"
+		>
+		<div>
+			<h2 class="mb-4 font-bold text-3xl text-lime-400 drop-shadow-md">
+				{title}
+			</h2>
+			<div class="mb-4 flex space-x-6">
+				<a href={link} target="_blank" class="px-3 py-2 rounded-md bg-lime-600 text-sm text-center shadow-md focus:outline-none focus:ring focus:ring-offset-2 focus:ring-lime-800 hover:bg-lime-700 hover:-translate-y-0.5 hover:-translate-x-0.5 transition-all active:bg-lime-800 active:scale-95">
+					Deployed Site
+				</a>
+				<a href={gh} target="_blank" class="px-3 py-2 rounded-md bg-lime-600 text-sm text-center shadow-md focus:outline-none focus:ring focus:ring-offset-2 focus:ring-lime-800 hover:bg-lime-700 hover:-translate-y-0.5 hover:-translate-x-0.5 transition-all active:bg-lime-800 active:scale-95">
+					GitHub Repo
+				</a>
+			</div>
+			<p class="mb-2 text-justify">
+				{body}
+			</p>
+		</div>
+	</div>
+	<hr class="w-full">
+	<div class="my-3 skew-x-1">
+		<h3 class="my-3 font-bold text-lg text-center text-stone-800">Built With:</h3>
+		<div class="flex flex-wrap justify-evenly gap-y-6">
+			{technologies.map(el => {
+				return (
+					<div class='w-20 flex-col justify-center text-center'>
+						<i class={`${el.name} text-3xl text-stone-700`} ></i>
+						<h4 class='text-stone-700 text-xs' >{el.title}</h4>
+					</div>
+				);
+			})}
+		</div>
+	</div>
+</li>
+
+
+
