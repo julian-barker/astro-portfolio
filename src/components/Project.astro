@@ -14,13 +14,15 @@ export interface Props {
 const { title, body, link, gh, images, technologies} = Astro.props;
 ---
 
-<li class="link-card rounded-md p-4 text-gray-300 bg-stone-500 sm:p-8 sm:w-5/12">
-	<div>
+<li class="link-card rounded-md text-gray-300 bg-stone-500 sm:w-96">
+	<div class="w-full h-48 sm:h-72">
 		<img 
-			class="mx-auto mb-4 rounded-md shadow-xl max-w-full max-h-48 brightness-90 sm:max-h-max sm:float-right sm:ml-6" 
-			src={images[0]} 
-			alt="placeholder"
+		class="mx-auto mb-4 rounded-md shadow-xl h-48 brightness-90 object-cover object-top sm:h-72" 
+		src={images[0]} 
+		alt="placeholder"
 		>
+	</div>
+	<div class="p-4">
 		<div>
 			<h2 class="mb-4 font-bold text-3xl text-lime-400 drop-shadow-md">
 				{title}
@@ -33,23 +35,23 @@ const { title, body, link, gh, images, technologies} = Astro.props;
 					GitHub Repo
 				</a>
 			</div>
-			<p class="mb-2 text-justify">
+			<p class="mb-2 text-sm text-justify sm:text-md">
 				{body}
 			</p>
 		</div>
-	</div>
-	<hr class="w-full">
-	<div class="my-3">
-		<h3 class="my-3 font-bold text-lg text-center text-stone-800">Built With:</h3>
-		<div class="flex flex-wrap justify-evenly gap-y-6">
-			{technologies.map(el => {
-				return (
-					<div class='w-20 flex-col justify-center text-center'>
-						<i class={`${el.name} text-3xl text-stone-700`} ></i>
-						<h4 class='text-stone-700 text-xs' >{el.title}</h4>
-					</div>
-				);
-			})}
+		<hr class="w-full">
+		<div class="my-3">
+			<h3 class="my-3 font-bold text-lg text-center text-stone-800">Built With:</h3>
+			<div class="flex flex-wrap justify-evenly gap-y-6">
+				{technologies.map(el => {
+					return (
+						<div class='w-20 flex-col justify-center text-center'>
+							<i class={`${el.name} text-3xl text-stone-700`} ></i>
+							<h4 class='text-stone-700 text-xs' >{el.title}</h4>
+						</div>
+					);
+				})}
+			</div>
 		</div>
 	</div>
 </li>
