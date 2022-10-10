@@ -40,7 +40,7 @@ import Project from "@components/Project.astro";
 			</div>
 		</Section>
 		<Section heading='Projects'>
-			<ul class="mt-8 flex flex-wrap justify-evenly gap-y-8">
+			<ul class="mt-8 flex flex-wrap justify-evenly gap-y-8 sm:gap-y-16">
 				{Data.projects.map(el => {
 					return (
 						<Project 
@@ -65,10 +65,3 @@ import Project from "@components/Project.astro";
 		</Section>
 	</main>
 </Layout>
-
-<style>
-	html {
-		font-family: "Fira Code";
-	}
-
-</style>

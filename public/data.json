@@ -74,7 +74,7 @@
     {
       "title": "City Explorer",
       "startDate": "2022",
-      "description": "Queries the LocationIQ API and subsequently a Yelp, TMDB, and WeatherBit APIs to present the user with a map and some information about a city.",
+      "description": "This application queries the LocationIQ API and subsequently a Yelp, TMDB, and WeatherBit APIs to present the user with a map and some information about a city.",
       "images": [
         "images/explorer/p1.jpg",
         "https://via.placeholder.com/600x400/ab6ded/e6e6e6.jpg?text=Still+Coming+Soon"
