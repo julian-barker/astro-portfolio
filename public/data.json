@@ -76,7 +76,7 @@
       "startDate": "2022",
       "description": "This application queries the LocationIQ API and subsequently a Yelp, TMDB, and WeatherBit APIs to present the user with a map and some information about a city.",
       "images": [
-        "images/explorer/p1.jpg",
+        "images/explorer/p1.webp",
         "https://via.placeholder.com/600x400/ab6ded/e6e6e6.jpg?text=Still+Coming+Soon"
       ],
       "link": "https://julian-city-explorer.netlify.app/",
@@ -105,7 +105,7 @@
       "startDate": "2022",
       "description": "This page is built in React and displays a set of card with images and descriptions of things with horns. Users can \"like\" an image and it will dynamically display heart icons for <10 hearts, or a compact number for >10 hearts. The page has modal functionality, basic fuzzy search, filtering by number of horns, and sorting by likes, number of horns, id, and name.",
       "images": [
-        "images/horns/p1.jpg",
+        "images/horns/p1.webp",
         "images/horns/p2.jpg"
       ],
       "link": "https://julians-horned-beasts.netlify.app/",
@@ -130,7 +130,7 @@
       "startDate": "2022",
       "description": "This page recreates the classic game \"Tetris\", with all the same functionality, a localStorage leaderboard, and a localStorage darkmode preference. It also has \"How-to-Play\", \"Trivia\", and \"About the Team\" pages.",
       "images": [
-        "images/gitris/p1.jpg",
+        "images/gitris/p1.webp",
         "images/gitris/p2.jpg"
       ],
       "link": "https://julian-barker.github.io/game-site/",
