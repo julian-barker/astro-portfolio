@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+import pkg from "react-vertical-timeline-component-fix";
+import "react-vertical-timeline-component-fix/style.min.css";
+
+const { VerticalTimeline, VerticalTimelineElement } = pkg;
 
 class Experience extends Component {
   render() {
