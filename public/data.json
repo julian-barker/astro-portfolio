@@ -72,12 +72,45 @@
   ],
   "projects": [
     {
+      "title": "Vacation Nation",
+      "startDate": "2022",
+      "description": "This full-stack app uses three APIs to present the user with the cheapest round-trip flights from one destination to another for a set of dates. It allows the user to save flights that they are interested into MongoDB, and gives the user the option to append a nickname and notes to the stored flight.",
+      "images": [
+        "images/vacation/p1.avif",
+        "images/vacation/p1.png"
+      ],
+      "link": "https://vacationation.netlify.app/",
+      "gh": "https://github.com/F-R-R-B",
+      "technologies": [
+        {
+          "name": "devicon-react-plain",
+          "title": "React"
+        },
+        {
+          "title": "Tailwind",
+          "name": "devicon-tailwindcss-plain"
+        },
+        {
+          "title": "NodeJS",
+          "name": "devicon-nodejs-plain"
+        },
+        {
+          "name": "devicon-express-original",
+          "title": "Express"
+        },
+        {
+          "name": "devicon-mongodb-plain",
+          "title": "MongoDB"
+        }
+      ]
+    },
+    {
       "title": "City Explorer",
       "startDate": "2022",
       "description": "This application queries the LocationIQ API and subsequently a Yelp, TMDB, and WeatherBit APIs to present the user with a map and some information about a city.",
       "images": [
         "images/explorer/p1.avif",
-        "https://via.placeholder.com/600x400/ab6ded/e6e6e6.jpg?text=Still+Coming+Soon"
+        "images/explorer/p1.png"
       ],
       "link": "https://julian-city-explorer.netlify.app/",
       "gh": "https://github.com/julian-barker/city-explorer/",
@@ -106,7 +139,7 @@
       "description": "This page is built in React and displays a set of card with images and descriptions of things with horns. Users can \"like\" an image and it will dynamically display heart icons for <10 hearts, or a compact number for >10 hearts. The page has modal functionality, basic fuzzy search, filtering by number of horns, and sorting by likes, number of horns, id, and name.",
       "images": [
         "images/horns/p1.avif",
-        "images/horns/p2.jpg"
+        "images/horns/p1.jpg"
       ],
       "link": "https://julians-horned-beasts.netlify.app/",
       "gh": "https://github.com/julian-barker/horned-animals/",
@@ -131,7 +164,7 @@
       "description": "This page recreates the classic game \"Tetris\", with all the same functionality, a localStorage leaderboard, and a localStorage darkmode preference. It also has \"How-to-Play\", \"Trivia\", and \"About the Team\" pages.",
       "images": [
         "images/gitris/p1.avif",
-        "images/gitris/p2.jpg"
+        "images/gitris/p1.jpg"
       ],
       "link": "https://julian-barker.github.io/game-site/",
       "gh": "https://github.com/julian-barker/game-site/",
