@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import pkg from "react-vertical-timeline-component-fix";
 import "react-vertical-timeline-component-fix/style.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser, faAddressCard } from '@fortawesome/free-solid-svg-icons';
 
 const { VerticalTimeline, VerticalTimelineElement } = pkg;
 
@@ -10,18 +12,10 @@ class Experience extends Component {
       var sectionName = 'Experience';
       var work = this.props.experience.map(function (work, i) {
         const technologies = work.technologies;
-        const mainTechnologies = work.mainTech;
 
-        var mainTech = mainTechnologies.map((technology, i) => {
-          return (
-            <div key={i}>
-              {technology}
-            </div>
-          );
-        });
         var tech = technologies.map((technology, i) => {
           return (
-            <div key={i}>
+            <div key={i} className='inline-block m-0.5 px-3 rounded-l-full rounded-r-full bg-lime-500 text-stone-100'>
               {technology}
             </div>
           );
@@ -31,25 +25,21 @@ class Experience extends Component {
             className="vertical-timeline-element--work"
             date={work.years}
             iconStyle={{
-              background: "#bb7753",
-              color: "#fff",
+              background: "rgb(245 158 11)",
+              color: "#eee",
               textAlign: "center",
             }}
-            icon={<i className="fab fa-react experience-icon"></i>}
+            icon={<i className="fab fa-react experience-icon my-0.5 text-3xl"></i>}
             key={i}
           >
-            <div style={{ textAlign: "left", marginBottom: "4px" }}>
-              {mainTech}
-            </div>
-
             <h3
-              className="vertical-timeline-element-title"
+              className="vertical-timeline-element-title font-bold text-xl text-amber-500"
               style={{ textAlign: "left" }}
             >
               {work.title}
             </h3>
             <h4
-              className="vertical-timeline-element-subtitle"
+              className="vertical-timeline-element-subtitle font-medium text-base"
               style={{ textAlign: "left" }}
             >
               {work.company}
@@ -61,8 +51,8 @@ class Experience extends Component {
     }
 
     return (
-      <section id="resume" className="pb-5 bg-primary font-monospace">
-        <div className="col-md-12 mx-auto">
+      <section id="resume" className="pb-5">
+        {/* <div className="col-md-12 mx-auto">
           <div className="col-md-12">
             <h1 className="section-title" style={{ color: "black" }}>
               <span className="text-black" style={{ textAlign: "center" }}>
@@ -70,18 +60,18 @@ class Experience extends Component {
               </span>
             </h1>
           </div>
-        </div>
-        <div className="col-md-8 mx-auto">
+        </div> */}
+        <div className=" mx-auto">
           <VerticalTimeline>
             {work}
             <VerticalTimelineElement
               iconStyle={{
-                background: "#bb7753",
+                background: "rgb(245 158 11)",
                 color: "#fff",
                 textAlign: "center",
               }}
               icon={
-                <i className="fas fa-hourglass-start mx-auto experience-icon"></i>
+                <i className="fas fa-hourglass-start mx-auto my-1 experience-icon text-2xl"></i>
               }
             />
           </VerticalTimeline>
