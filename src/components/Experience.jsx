@@ -1,15 +1,11 @@
 import React, { Component } from "react";
 import pkg from "react-vertical-timeline-component-fix";
 import "react-vertical-timeline-component-fix/style.min.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faAddressCard } from '@fortawesome/free-solid-svg-icons';
-
 const { VerticalTimeline, VerticalTimelineElement } = pkg;
 
 class Experience extends Component {
   render() {
     if (this.props.experience) {
-      var sectionName = 'Experience';
       var work = this.props.experience.map(function (work, i) {
         const technologies = work.technologies;
 

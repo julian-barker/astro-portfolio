@@ -14,13 +14,20 @@ export interface Props {
 const { title, body, link, gh, images, technologies} = Astro.props;
 ---
 
-<li class="link-card rounded-md text-gray-300 bg-stone-500 sm:w-96">
-	<div class="w-full h-48 sm:h-72">
-		<img 
-		class="mx-auto mb-4 rounded-md shadow-xl h-48 brightness-90 object-cover object-top sm:h-72" 
-		src={images[0]}
-		alt="placeholder"
+<li class="link-card mx-6 rounded-md text-gray-300 bg-stone-500 sm:w-96">
+	<div class="w-full sm:h-72">
+		<object 
+			data={images[0]}
+			class="mx-auto mb-4 rounded-t-md shadow-xl w-full object-cover object-top brightness-90 sm:h-72" 
+			style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
 		>
+			<img
+				src={images[1]}
+				alt="project screenshot"
+				class="mx-auto mb-4 rounded-t-md shadow-xl brightness-90 object-cover object-top sm:h-72" 
+				style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
+			/>
+		</object>
 	</div>
 	<div class="p-4">
 		<div>
@@ -28,10 +35,10 @@ const { title, body, link, gh, images, technologies} = Astro.props;
 				{title}
 			</h2>
 			<div class="mb-4 flex space-x-6">
-				<a href={link} target="_blank" class="px-3 py-2 rounded-md bg-lime-600 text-sm text-center shadow-md focus:outline-none focus:ring focus:ring-offset-2 focus:ring-lime-800 hover:bg-lime-700 hover:-translate-y-0.5 hover:-translate-x-0.5 transition-all active:bg-lime-800 active:scale-95">
+				<a href={link} target="_blank" class="px-3 py-2 rounded-md bg-lime-600 text-stone-200 text-sm text-center shadow-md focus:outline-none focus:ring focus:ring-offset-2 focus:ring-lime-800 hover:bg-lime-700 hover:-translate-y-0.5 hover:-translate-x-0.5 transition-all active:bg-lime-800 active:scale-95">
 					Deployed Site
 				</a>
-				<a href={gh} target="_blank" class="px-3 py-2 rounded-md bg-lime-600 text-sm text-center shadow-md focus:outline-none focus:ring focus:ring-offset-2 focus:ring-lime-800 hover:bg-lime-700 hover:-translate-y-0.5 hover:-translate-x-0.5 transition-all active:bg-lime-800 active:scale-95">
+				<a href={gh} target="_blank" class="px-3 py-2 rounded-md bg-lime-600 text-stone-200 text-sm text-center shadow-md focus:outline-none focus:ring focus:ring-offset-2 focus:ring-lime-800 hover:bg-lime-700 hover:-translate-y-0.5 hover:-translate-x-0.5 transition-all active:bg-lime-800 active:scale-95">
 					GitHub Repo
 				</a>
 			</div>
