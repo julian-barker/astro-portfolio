@@ -10,7 +10,7 @@ import Project from "@components/Project.astro";
 ---
 
 <Layout title="Julian Barker">
-	<Header name="header"></Header>
+	<Header name="header" page="home"></Header>
 	<main class='overflow-scroll scroll-py-16 scroll-smooth snap-y snap-mandatory' >
 		<Hero />
 		<Section heading='At a Glance...'>
@@ -18,16 +18,7 @@ import Project from "@components/Project.astro";
 				{Data.basic_info.titles}
 			</p>
 		</Section>
-		<!-- <Section heading='Welcome!'>
-			<p class="mb-2 text-center text-xl text-zinc-300 sm:text-2xl">
-				Hi, I'm <span class="text-amber-500">Julian</span>,
-			</p>
-			<p class="text-center text-xl text-zinc-300 sm:text-2xl">
-				I'm a junior software developer with an insatiable appetite for learning
-				new skills and tools. I'm looking forward to a lifelong career of
-				growth and contribution to worthy causes!
-			</p>
-		</Section> -->
+		
 		<Section heading='Skills'>
 			<div class="mt-8 flex flex-wrap justify-evenly gap-y-6 sm:gap-x-8">
 				{Data.skills.map(el => {
@@ -40,6 +31,7 @@ import Project from "@components/Project.astro";
 				})}
 			</div>
 		</Section>
+		
 		<Section heading='Projects'>
 			<ul class="mt-8 flex flex-wrap justify-evenly gap-y-8 sm:gap-y-16">
 				{Data.projects.map(el => {
@@ -61,8 +53,6 @@ import Project from "@components/Project.astro";
 		<Section heading='Experience'>
 			<Experience experience={Data.experience} client:idle/>
 		</Section>
-		<Section heading='More About Me'>
-
-		</Section>
+		
 	</main>
 </Layout>

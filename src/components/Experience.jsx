@@ -18,14 +18,14 @@ class Experience extends Component {
         });
         return (
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
+            className="vertical-timeline-element--work relative"
             date={work.years}
             iconStyle={{
               background: "rgb(245 158 11)",
               color: "#eee",
               textAlign: "center",
             }}
-            icon={<i className="fab fa-react experience-icon my-0.5 text-3xl"></i>}
+            icon={<i className="fab fa-react experience-icon text-3xl absolute inset-0"></i>}
             key={i}
           >
             <h3
