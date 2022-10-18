@@ -16,7 +16,7 @@ const { title, body, link, gh, images, technologies} = Astro.props;
 
 <li class="link-card mx-6 rounded-md text-gray-300 bg-stone-500 sm:w-96">
 	<div class="w-full sm:h-72">
-		<object 
+		<!-- <object 
 			data={images[0]}
 			class="mx-auto mb-4 rounded-t-md shadow-xl w-full object-cover object-top brightness-90 sm:h-72" 
 			style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
@@ -27,7 +27,14 @@ const { title, body, link, gh, images, technologies} = Astro.props;
 				class="mx-auto mb-4 rounded-t-md shadow-xl brightness-90 object-cover object-top sm:h-72" 
 				style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
 			/>
-		</object>
+		</object> -->
+		<img
+				src={images[0]}
+				alt="project screenshot"
+				class="mx-auto mb-4 rounded-t-md shadow-xl brightness-90 object-cover object-top sm:h-72" 
+				onerror={`this.src='${images[1]}'`}
+				style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
+			/>
 	</div>
 	<div class="p-4">
 		<div>
