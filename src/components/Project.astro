@@ -1,4 +1,6 @@
 ---
+import { Icon } from 'astro-icon';
+
 export interface Props {
 	title: string,
 	body: string,
@@ -9,14 +11,14 @@ export interface Props {
 		title: string,
 		name: string
 	}[]
-}
+};
 
 const { title, body, link, gh, images, technologies} = Astro.props;
 ---
 
 <li class="link-card mx-6 rounded-md text-gray-300 bg-stone-500 sm:w-96">
 	<div class="w-full sm:h-72">
-		<object 
+		<!-- <object 
 			data={images[0]}
 			class="mx-auto mb-4 rounded-t-md shadow-xl w-full object-cover object-top brightness-90 sm:h-72" 
 			style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
@@ -27,7 +29,14 @@ const { title, body, link, gh, images, technologies} = Astro.props;
 				class="mx-auto mb-4 rounded-t-md shadow-xl brightness-90 object-cover object-top sm:h-72" 
 				style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
 			/>
-		</object>
+		</object> -->
+		<img
+				src={images[0]}
+				alt="project screenshot"
+				class="mx-auto mb-4 rounded-t-md shadow-xl brightness-90 object-cover object-top sm:h-72" 
+				onerror={`this.src='${images[1]}'`}
+				style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
+			/>
 	</div>
 	<div class="p-4">
 		<div>
@@ -36,10 +45,10 @@ const { title, body, link, gh, images, technologies} = Astro.props;
 			</h2>
 			<div class="mb-4 flex space-x-6">
 				<a href={link} target="_blank" class="px-3 py-2 rounded-md bg-lime-600 text-stone-200 text-sm text-center shadow-md focus:outline-none focus:ring focus:ring-offset-2 focus:ring-lime-800 hover:bg-lime-700 hover:-translate-y-0.5 hover:-translate-x-0.5 transition-all active:bg-lime-800 active:scale-95">
-					Deployed Site
+					Visit <Icon name="akar-icons:link-out" />
 				</a>
 				<a href={gh} target="_blank" class="px-3 py-2 rounded-md bg-lime-600 text-stone-200 text-sm text-center shadow-md focus:outline-none focus:ring focus:ring-offset-2 focus:ring-lime-800 hover:bg-lime-700 hover:-translate-y-0.5 hover:-translate-x-0.5 transition-all active:bg-lime-800 active:scale-95">
-					GitHub Repo
+					GitHub <Icon name="akar-icons:link-out" class="text-sm" />
 				</a>
 			</div>
 			<p class="mb-2 text-sm text-justify sm:text-md">
@@ -62,3 +71,12 @@ const { title, body, link, gh, images, technologies} = Astro.props;
 		</div>
 	</div>
 </li>
+
+
+<style lang='css'>
+
+[astro-icon] {
+	display: inline;
+	height: 1rem;
+}
+</style>
