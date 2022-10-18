@@ -5,7 +5,8 @@ export interface Props {
 }
 
 const { page } = Astro.props;
-const home = page === 'home';
+// const home = page === 'home';
+const home = false;
 ---
 <div>
   <div class={`${home ? 'h-28' : 'h-14'} backdrop-brightness-50`}></div>
