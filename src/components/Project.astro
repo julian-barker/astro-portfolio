@@ -1,4 +1,6 @@
 ---
+import { Icon } from 'astro-icon';
+
 export interface Props {
 	title: string,
 	body: string,
@@ -9,7 +11,7 @@ export interface Props {
 		title: string,
 		name: string
 	}[]
-}
+};
 
 const { title, body, link, gh, images, technologies} = Astro.props;
 ---
@@ -43,10 +45,10 @@ const { title, body, link, gh, images, technologies} = Astro.props;
 			</h2>
 			<div class="mb-4 flex space-x-6">
 				<a href={link} target="_blank" class="px-3 py-2 rounded-md bg-lime-600 text-stone-200 text-sm text-center shadow-md focus:outline-none focus:ring focus:ring-offset-2 focus:ring-lime-800 hover:bg-lime-700 hover:-translate-y-0.5 hover:-translate-x-0.5 transition-all active:bg-lime-800 active:scale-95">
-					Deployed Site
+					Visit <Icon name="akar-icons:link-out" />
 				</a>
 				<a href={gh} target="_blank" class="px-3 py-2 rounded-md bg-lime-600 text-stone-200 text-sm text-center shadow-md focus:outline-none focus:ring focus:ring-offset-2 focus:ring-lime-800 hover:bg-lime-700 hover:-translate-y-0.5 hover:-translate-x-0.5 transition-all active:bg-lime-800 active:scale-95">
-					GitHub Repo
+					GitHub <Icon name="akar-icons:link-out" class="text-sm" />
 				</a>
 			</div>
 			<p class="mb-2 text-sm text-justify sm:text-md">
@@ -69,3 +71,12 @@ const { title, body, link, gh, images, technologies} = Astro.props;
 		</div>
 	</div>
 </li>
+
+
+<style lang='css'>
+
+[astro-icon] {
+	display: inline;
+	height: 1rem;
+}
+</style>
