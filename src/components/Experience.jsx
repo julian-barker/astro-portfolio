@@ -25,7 +25,7 @@ class Experience extends Component {
               color: "#eee",
               textAlign: "center",
             }}
-            icon={<i className="fab fa-react experience-icon text-3xl absolute inset-0"></i>}
+            icon={<i className="fab fa-react experience-icon text-3xl md:text-4xl absolute inset-0 flex justify-center items-center"></i>}
             key={i}
           >
             <h3
@@ -61,13 +61,14 @@ class Experience extends Component {
           <VerticalTimeline>
             {work}
             <VerticalTimelineElement
+              className='relative'
               iconStyle={{
                 background: "rgb(245 158 11)",
                 color: "#fff",
                 textAlign: "center",
               }}
               icon={
-                <i className="fas fa-hourglass-start mx-auto my-1 experience-icon text-2xl"></i>
+                <i className="fas fa-hourglass-start experience-icon text-2xl md:text-3xl absolute inset-0 flex justify-center items-center"></i>
               }
             />
           </VerticalTimeline>
