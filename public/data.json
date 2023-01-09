@@ -18,27 +18,7 @@
   },
   "skills": [
     {
-      "title": "HTML 5",
-      "name": "devicon-html5-plain"
-    },
-    {
-      "title": "CSS 3",
-      "name": "devicon-css3-plain"
-    },
-    {
-      "title": "Sass",
-      "name": "devicon-sass-original"
-    },
-    {
-      "title": "Bootstrap",
-      "name": "devicon-bootstrap-plain"
-    },
-    {
-      "title": "Tailwind",
-      "name": "devicon-tailwindcss-plain"
-    },
-    {
-      "title": "JavaScript",
+      "title": "JavaScript (ES6)",
       "name": "devicon-javascript-plain"
     },
     {
@@ -50,8 +30,48 @@
       "name": "devicon-react-plain"
     },
     {
+      "title": "HTML 5",
+      "name": "devicon-html5-plain"
+    },
+    {
+      "title": "CSS 3",
+      "name": "devicon-css3-plain"
+    },
+    {
       "title": "NodeJS",
       "name": "devicon-nodejs-plain"
+    },
+    {
+      "title": "Tailwind",
+      "name": "devicon-tailwindcss-plain"
+    },
+    {
+      "title": "PostgreSQL",
+      "name": "devicon-tailwindcss-plain"
+    },
+    {
+      "title": "AWS EC2",
+      "name": "devicon-amazonwebservices-original"
+    },
+    {
+      "title": "AWS Elastic Beanstalk",
+      "name": "devicon-amazonwebservices-original"
+    },
+    {
+      "title": "AWS Lambda",
+      "name": "devicon-amazonwebservices-original"
+    },
+    {
+      "title": "AWS S3",
+      "name": "devicon-amazonwebservices-original"
+    },
+    {
+      "title": "AWS DynamoDB",
+      "name": "devicon-amazonwebservices-original"
+    },
+    {
+      "title": "jest",
+      "name": "devicon-jest-plain"
     },
     {
       "title": "Express",
@@ -68,6 +88,14 @@
     {
       "title": "GitHub",
       "name": "devicon-github-original"
+    },
+    {
+      "title": "Sass",
+      "name": "devicon-sass-original"
+    },
+    {
+      "title": "Bootstrap",
+      "name": "devicon-bootstrap-plain"
     }
   ],
   "projects": [
