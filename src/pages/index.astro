@@ -19,20 +19,7 @@ import Project from "@components/Project.astro";
 				{Data.basic_info.titles}
 			</p>
 		</Section>
-		
-		<Section heading='Skills'>
-			<div class="mt-8 flex flex-wrap justify-evenly gap-y-6 sm:gap-x-8">
-				{Data.skills.map(el => {
-					return (
-						<div class='w-28 flex-col justify-center text-center'>
-							<i class={`${el.name} text-4xl text-stone-300`} ></i>
-							<h4 class='text-stone-300 text-sm' >{el.title}</h4>
-						</div>
-					);
-				})}
-			</div>
-		</Section>
-		
+
 		<Section heading='Projects'>
 			<!-- <ul class="mt-8 flex flex-wrap justify-evenly gap-y-8 sm:gap-y-16"> -->
 			<ul class="mt-8 flex flex-wrap justify-center">
@@ -50,6 +37,19 @@ import Project from "@components/Project.astro";
 					);
 				})}
 			</ul>
+		</Section>
+		
+		<Section heading='Skills'>
+			<div class="mt-8 flex flex-wrap justify-evenly gap-y-6 sm:gap-x-8">
+				{Data.skills.map(el => {
+					return (
+						<div class='w-28 flex-col justify-center text-center'>
+							<i class={`${el.name} text-4xl text-stone-300`} ></i>
+							<h4 class='text-stone-300 text-sm' >{el.title}</h4>
+						</div>
+					);
+				})}
+			</div>
 		</Section>
 		
 		<Section heading='Experience'>
