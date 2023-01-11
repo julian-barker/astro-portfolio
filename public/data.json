@@ -193,7 +193,7 @@
       "description": "This page recreates the classic game \"Tetris\", with all the same functionality, a localStorage leaderboard, and a localStorage darkmode preference. It also has \"How-to-Play\", \"Trivia\", and \"About the Team\" pages.",
       "images": [
         "images/gitris/p1.avif",
-        "images/gitris/p1.jpg"
+        "images/gitris/p1.png"
       ],
       "link": "https://julian-barker.github.io/game-site/",
       "gh": "https://github.com/julian-barker/game-site/",
