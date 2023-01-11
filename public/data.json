@@ -102,7 +102,7 @@
     {
       "title": "Travelio",
       "startDate": "2022",
-      "description": "Chat application mimicking the functionality of a Discord server with distinct rooms, RBAC, bot commands that return external API results, subscription to push notifications, and a CLI app published to npmjs.com. Executable from the command-line with ‘npx travelio-clent’",
+      "description": "Chat application mimicking the functionality of a Discord server with distinct rooms, RBAC, bot commands that return external API results, subscription to push notifications, and a CLI app published to NPM. Executable from the command-line with ‘npx travelio-client’",
       "images": [
         "images/travelio/p1.avif",
         "images/travelio/p1.png"
@@ -127,7 +127,7 @@
     {
       "title": "Vacation Nation",
       "startDate": "2022",
-      "description": "Trip/vacation planner and uses three external APIs to present a list of the five cheapest flights from one location to another. Allows authenticated users to save search results to MongoDB.",
+      "description": "Trip/vacation planner that uses three external APIs to present a list of the five cheapest flights from one location to another. Allows authenticated users to save search results to MongoDB.",
       "images": [
         "images/vacation/p1.avif",
         "images/vacation/p1.png"
@@ -160,7 +160,7 @@
     {
       "title": "City Explorer",
       "startDate": "2022",
-      "description": "This application queries the LocationIQ API and subsequently a Yelp, TMDB, and WeatherBit APIs to present the user with a map and some information about a city.",
+      "description": "This application queries the LocationIQ API and subsequently the Yelp, TMDB, and WeatherBit APIs to present the user with a map and some information about a city.",
       "images": [
         "images/explorer/p1.avif",
         "images/explorer/p1.png"
@@ -190,7 +190,7 @@
     {
       "title": "Gitris",
       "startDate": "2022",
-      "description": "This page recreates the classic game \"Tetris\", with all the same functionality, a localStorage leaderboard, and a localStorage darkmode preference. It also has \"How-to-Play\", \"Trivia\", and \"About the Team\" pages.",
+      "description": "This app recreates the classic game \"Tetris\", with all the same functionality, a localStorage leaderboard, and a localStorage darkmode preference. It also has \"How-to-Play\", \"Trivia\", and \"About the Team\" pages.",
       "images": [
         "images/gitris/p1.avif",
         "images/gitris/p1.png"
