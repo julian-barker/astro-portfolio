@@ -1,7 +1,7 @@
 {
   "basic_info": {
     "name": "Julian Barker",
-    "titles": "Software Engineer | Full-Stack Web Developer | Former Infantry Officer in the US Army | TS-SCI | USMA '16 | Code Fellows '23",
+    "titles": "Software Engineer | React | Typescript | Former Infantry Officer | TS-SCI | B.S. Electrical Eng. - USMA '16 | Code Fellows '23",
     "social": [
       {
         "name": "github",
@@ -18,27 +18,7 @@
   },
   "skills": [
     {
-      "title": "HTML 5",
-      "name": "devicon-html5-plain"
-    },
-    {
-      "title": "CSS 3",
-      "name": "devicon-css3-plain"
-    },
-    {
-      "title": "Sass",
-      "name": "devicon-sass-original"
-    },
-    {
-      "title": "Bootstrap",
-      "name": "devicon-bootstrap-plain"
-    },
-    {
-      "title": "Tailwind",
-      "name": "devicon-tailwindcss-plain"
-    },
-    {
-      "title": "JavaScript",
+      "title": "JavaScript (ES6)",
       "name": "devicon-javascript-plain"
     },
     {
@@ -50,8 +30,48 @@
       "name": "devicon-react-plain"
     },
     {
+      "title": "HTML 5",
+      "name": "devicon-html5-plain"
+    },
+    {
+      "title": "CSS 3",
+      "name": "devicon-css3-plain"
+    },
+    {
       "title": "NodeJS",
       "name": "devicon-nodejs-plain"
+    },
+    {
+      "title": "Tailwind",
+      "name": "devicon-tailwindcss-plain"
+    },
+    {
+      "title": "PostgreSQL",
+      "name": "devicon-postgresql-plain"
+    },
+    {
+      "title": "AWS EC2",
+      "name": "devicon-amazonwebservices-original"
+    },
+    {
+      "title": "AWS Elastic Beanstalk",
+      "name": "devicon-amazonwebservices-original"
+    },
+    {
+      "title": "AWS Lambda",
+      "name": "devicon-amazonwebservices-original"
+    },
+    {
+      "title": "AWS S3",
+      "name": "devicon-amazonwebservices-original"
+    },
+    {
+      "title": "AWS DynamoDB",
+      "name": "devicon-amazonwebservices-original"
+    },
+    {
+      "title": "jest",
+      "name": "devicon-jest-plain"
     },
     {
       "title": "Express",
@@ -68,13 +88,46 @@
     {
       "title": "GitHub",
       "name": "devicon-github-original"
+    },
+    {
+      "title": "Sass",
+      "name": "devicon-sass-original"
+    },
+    {
+      "title": "Bootstrap",
+      "name": "devicon-bootstrap-plain"
     }
   ],
   "projects": [
     {
+      "title": "Travelio",
+      "startDate": "2022",
+      "description": "Chat application mimicking the functionality of a Discord server with distinct rooms, RBAC, bot commands that return external API results, subscription to push notifications, and a CLI app published to npmjs.com. Executable from the command-line with ‘npx travelio-clent’",
+      "images": [
+        "images/travelio/p1.avif",
+        "images/travelio/p1.png"
+      ],
+      "link": "https://julian-barker.github.io/travelio/",
+      "gh": "https://github.com/julian-barker/travelio/",
+      "technologies": [
+        {
+          "name": "devicon-javascript-plain",
+          "title": "JavaScript"
+        },
+        {
+          "name": "devicon-socketio-original",
+          "title": "Socket.io"
+        },
+        {
+          "name": "devicon-amazonwebservices-original",
+          "title": "AWS (EB, Lambda)"
+        }
+      ]
+    },
+    {
       "title": "Vacation Nation",
       "startDate": "2022",
-      "description": "This full-stack app uses three APIs to present the user with the cheapest round-trip flights from one destination to another for a set of dates. It allows the user to save flights that they are interested into MongoDB, and gives the user the option to append a nickname and notes to the stored flight.",
+      "description": "Trip/vacation planner and uses three external APIs to present a list of the five cheapest flights from one location to another. Allows authenticated users to save search results to MongoDB.",
       "images": [
         "images/vacation/p1.avif",
         "images/vacation/p1.png"
@@ -133,38 +186,14 @@
         }
       ]
     },
-    {
-      "title": "Gallery of Horns",
-      "startDate": "2022",
-      "description": "This page is built in React and displays a set of card with images and descriptions of things with horns. Users can \"like\" an image and it will dynamically display heart icons for <10 hearts, or a compact number for >10 hearts. The page has modal functionality, basic fuzzy search, filtering by number of horns, and sorting by likes, number of horns, id, and name.",
-      "images": [
-        "images/horns/p1.avif",
-        "images/horns/p1.jpg"
-      ],
-      "link": "https://julians-horned-beasts.netlify.app/",
-      "gh": "https://github.com/julian-barker/horned-animals/",
-      "technologies": [
-        {
-          "name": "devicon-react-plain",
-          "title": "React"
-        },
-        {
-          "name": "devicon-javascript-plain",
-          "title": "JavaScript"
-        },
-        {
-          "name": "devicon-bootstrap-plain",
-          "title": "Bootstrap"
-        }
-      ]
-    },
+    
     {
       "title": "Gitris",
       "startDate": "2022",
       "description": "This page recreates the classic game \"Tetris\", with all the same functionality, a localStorage leaderboard, and a localStorage darkmode preference. It also has \"How-to-Play\", \"Trivia\", and \"About the Team\" pages.",
       "images": [
         "images/gitris/p1.avif",
-        "images/gitris/p1.jpg"
+        "images/gitris/p1.png"
       ],
       "link": "https://julian-barker.github.io/game-site/",
       "gh": "https://github.com/julian-barker/game-site/",

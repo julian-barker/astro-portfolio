@@ -5,7 +5,7 @@ export interface Props {
 	title: string,
 	body: string,
 	link: string,
-	gh: string,
+	github: string,
 	images: string[],
 	technologies: {
 		title: string,
@@ -13,41 +13,36 @@ export interface Props {
 	}[]
 };
 
-const { title, body, link, gh, images, technologies} = Astro.props;
+const { title, body, link, github, images, technologies} = Astro.props;
 ---
 
-<li class="link-card mx-6 rounded-md text-gray-300 bg-stone-500 sm:w-96">
-	<div class="w-full sm:h-72">
-		<!-- <object 
-			data={images[0]}
-			class="mx-auto mb-4 rounded-t-md shadow-xl w-full object-cover object-top brightness-90 sm:h-72" 
-			style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
-		>
-			<img
-				src={images[1]}
-				alt="project screenshot"
-				class="mx-auto mb-4 rounded-t-md shadow-xl brightness-90 object-cover object-top sm:h-72" 
-				style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
-			/>
-		</object> -->
+<li class="link-card relative text-gray-300 bg-stone-500 sm:max-w-lg">
+	<div class="w-full">
 		<img
 				src={images[0]}
 				alt="project screenshot"
-				class="mx-auto mb-4 rounded-t-md shadow-xl brightness-90 object-cover object-top sm:h-72" 
+				class="mx-auto mb-4 shadow-xl brightness-90 object-cover object-left-top" 
 				onerror={`this.src='${images[1]}'`}
 				style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
 			/>
 	</div>
-	<div class="p-4">
+	<!-- <div class="absolute z-10 inset-0 hover:hidden">
+		<div class="absolute left-0 bottom-0 backdrop-blur-md backdrop-brightness-150">
+			<h2 class="m-2 font-bold text-3xl text-amber-400 drop-shadow-md">
+				{title}
+			</h2>
+		</div>
+	</div> -->
+	<div class="absolute inset-0 p-4 backdrop-blur-sm backdrop-brightness-50 opacity-0 hover:opacity-100 transition-all">
 		<div>
-			<h2 class="mb-4 font-bold text-3xl text-lime-400 drop-shadow-md">
+			<h2 class="mb-4 font-bold text-3xl text-amber-400 drop-shadow-md">
 				{title}
 			</h2>
 			<div class="mb-4 flex space-x-6">
-				<a href={link} target="_blank" class="px-3 py-2 rounded-md bg-lime-600 text-stone-200 text-sm text-center shadow-md focus:outline-none focus:ring focus:ring-offset-2 focus:ring-lime-800 hover:bg-lime-700 hover:-translate-y-0.5 hover:-translate-x-0.5 transition-all active:bg-lime-800 active:scale-95">
+				<a href={link} target="_blank" class="px-3 py-2 rounded-md bg-amber-600 text-stone-200 text-sm text-center shadow-md focus:outline-none focus:ring focus:ring-offset-2 focus:ring-amber-800 hover:bg-amber-700 hover:-translate-y-0.5 hover:-translate-x-0.5 transition-all active:bg-amber-800 active:scale-95">
 					Visit <Icon name="akar-icons:link-out" />
 				</a>
-				<a href={gh} target="_blank" class="px-3 py-2 rounded-md bg-lime-600 text-stone-200 text-sm text-center shadow-md focus:outline-none focus:ring focus:ring-offset-2 focus:ring-lime-800 hover:bg-lime-700 hover:-translate-y-0.5 hover:-translate-x-0.5 transition-all active:bg-lime-800 active:scale-95">
+				<a href={github} target="_blank" class="px-3 py-2 rounded-md bg-amber-600 text-stone-200 text-sm text-center shadow-md focus:outline-none focus:ring focus:ring-offset-2 focus:ring-amber-800 hover:bg-amber-700 hover:-translate-y-0.5 hover:-translate-x-0.5 transition-all active:bg-amber-800 active:scale-95">
 					GitHub <Icon name="akar-icons:link-out" class="text-sm" />
 				</a>
 			</div>
@@ -57,13 +52,13 @@ const { title, body, link, gh, images, technologies} = Astro.props;
 		</div>
 		<hr class="w-full">
 		<div class="my-3">
-			<h3 class="my-3 font-bold text-lg text-center text-stone-800">Built With:</h3>
+			<h3 class="my-3 font-bold text-lg text-center text-stone-300">Built With:</h3>
 			<div class="flex flex-wrap justify-evenly gap-y-6">
 				{technologies.map(el => {
 					return (
 						<div class='w-20 flex-col justify-center text-center'>
-							<i class={`${el.name} text-3xl text-stone-700`} ></i>
-							<h4 class='text-stone-700 text-xs' >{el.title}</h4>
+							<i class={`${el.name} text-3xl text-stone-300`} ></i>
+							<h4 class='text-stone-400 text-xs' >{el.title}</h4>
 						</div>
 					);
 				})}
