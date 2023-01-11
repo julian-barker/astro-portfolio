@@ -16,17 +16,24 @@ export interface Props {
 const { title, body, link, github, images, technologies} = Astro.props;
 ---
 
-<li class="link-card mx-6 rounded-md text-gray-300 bg-stone-500 sm:max-w-lg">
+<li class="link-card relative text-gray-300 bg-stone-500 sm:max-w-lg">
 	<div class="w-full">
 		<img
 				src={images[0]}
 				alt="project screenshot"
-				class="mx-auto mb-4 rounded-t-md shadow-xl brightness-90 object-cover object-left-top" 
+				class="mx-auto mb-4 shadow-xl brightness-90 object-cover object-left-top" 
 				onerror={`this.src='${images[1]}'`}
 				style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
 			/>
 	</div>
-	<div class="p-4">
+	<!-- <div class="absolute z-10 inset-0 hover:hidden">
+		<div class="absolute left-0 bottom-0 backdrop-blur-md backdrop-brightness-150">
+			<h2 class="m-2 font-bold text-3xl text-amber-400 drop-shadow-md">
+				{title}
+			</h2>
+		</div>
+	</div> -->
+	<div class="absolute inset-0 p-4 backdrop-blur-sm backdrop-brightness-50 opacity-0 hover:opacity-100 transition-all">
 		<div>
 			<h2 class="mb-4 font-bold text-3xl text-amber-400 drop-shadow-md">
 				{title}
@@ -45,13 +52,13 @@ const { title, body, link, github, images, technologies} = Astro.props;
 		</div>
 		<hr class="w-full">
 		<div class="my-3">
-			<h3 class="my-3 font-bold text-lg text-center text-stone-800">Built With:</h3>
+			<h3 class="my-3 font-bold text-lg text-center text-stone-300">Built With:</h3>
 			<div class="flex flex-wrap justify-evenly gap-y-6">
 				{technologies.map(el => {
 					return (
 						<div class='w-20 flex-col justify-center text-center'>
-							<i class={`${el.name} text-3xl text-stone-700`} ></i>
-							<h4 class='text-stone-700 text-xs' >{el.title}</h4>
+							<i class={`${el.name} text-3xl text-stone-300`} ></i>
+							<h4 class='text-stone-400 text-xs' >{el.title}</h4>
 						</div>
 					);
 				})}
